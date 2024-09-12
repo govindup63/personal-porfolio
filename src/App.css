@@ -2,37 +2,36 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 .App header {
     background: #333;
     color: #fff;
     padding: 1em 0;
-    text-align: center;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-section {
+main {
     padding: 20px;
 }
 
-.project {
-    margin-bottom: 20px;
+.github-logo {
+    width: 40px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 footer {
@@ -40,27 +39,11 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form label {
-    margin-top: 10px;
-}
-
-form input, form textarea {
-    padding: 10px;
-    margin-top: 5px;
-}
-
-form button {
-    margin-top: 10px;
-    padding: 10px;
-    background: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
+section#work-in-progress {
+    margin-top: 50px;
 }

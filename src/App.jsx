@@ -1,58 +1,24 @@
 import React from 'react';
 import './App.css';
+import githubLogo from './github-logo.png'; // Make sure to add this image to your `src` directory
 
 function App() {
   return (
     <div className="App">
       <header>
-        <nav>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-        <h1>Welcome to My Portfolio</h1>
+        <h1>Portfolio Website</h1>
       </header>
 
-      <section id="home">
-        <h2>Home</h2>
-        <p>Welcome to my personal portfolio website. Here you'll find information about me, my projects, and how to get in touch.</p>
-      </section>
-
-      <section id="about">
-        <h2>About Me</h2>
-        <p>Hi, I'm Govind Pandey. I'm a web developer with a passion for creating stunning and functional websites. I have 4 years of coding experience and 2 years of web development experience.</p>
-      </section>
-
-      <section id="projects">
-        <h2>Projects</h2>
-        <div className="project">
-          <h3>Project 1</h3>
-          <p>Description of Project 1.</p>
-        </div>
-        <div className="project">
-          <h3>Project 2</h3>
-          <p>Description of Project 2.</p>
-        </div>
-      </section>
-
-      <section id="contact">
-        <h2>Contact</h2>
-        <form id="contact-form">
-          <label htmlFor="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-
-          <label htmlFor="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-
-          <label htmlFor="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
-
-          <button type="submit">Send</button>
-        </form>
-      </section>
+      <main>
+        <section id="work-in-progress">
+          <h2>Work in Progress</h2>
+          <p>We're currently working on building my portfolio website. Check back soon for updates!</p>
+          <a href="https://github.com/govindup63" target="_blank" rel="noopener noreferrer">
+            <img src={githubLogo} alt="GitHub Logo" className="github-logo" />
+            <span>Visit my GitHub</span>
+          </a>
+        </section>
+      </main>
 
       <footer>
         <p>&copy; 2024 Govind Pandey</p>
